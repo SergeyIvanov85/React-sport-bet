@@ -1,6 +1,7 @@
-import { RouterProvider } from 'react-router-dom';
-import { router } from '@/app/router';
-
-const App = () => <RouterProvider router={router} />;
+const App = () => (
+    <div>
+        <h2>react-sport-bet</h2>
+    </div>
+);
 
 export default App;
