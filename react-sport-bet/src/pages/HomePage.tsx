@@ -4,8 +4,14 @@ import { events } from '@/data/Events';
 
 const HomePage = () => (
     <MainWrapper>
-        <EventBlock heading='Текущие события' events={events.filter(event => event.type === 'live')} />
-        <EventBlock heading='Предстоящие события' events={events.filter(event => event.type === 'upcoming')} />
+        <EventBlock
+            heading='Текущие события'
+            events={events.filter((event) => event.type === 'live')}
+        />
+        <EventBlock
+            heading='Предстоящие события'
+            events={events.filter((event) => event.type === 'upcoming')}
+        />
     </MainWrapper>
 );
 

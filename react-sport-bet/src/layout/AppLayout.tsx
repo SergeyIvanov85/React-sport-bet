@@ -1,12 +1,14 @@
 import { Outlet } from 'react-router-dom';
 
-import { AppHeader, AppMain } from './AppLayout.styles';
+import { AppHeader, AppMain, RootLink } from './AppLayout.styles';
 
 const AppLayout = () => (
     <>
-        <AppHeader>
-            <h1>СПОРТ-БЕТ</h1>
-        </AppHeader>
+        <RootLink to='/'>
+            <AppHeader>
+                <h1>СПОРТ БЕТ</h1>
+            </AppHeader>
+        </RootLink>
         <AppMain>
             <Outlet />
         </AppMain>

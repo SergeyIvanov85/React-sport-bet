@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import logo from '@/assets/icons/cdnlogo.com_bet.svg';
+import { Link } from 'react-router-dom';
 
 export const AppHeader = styled.header`
   display: flex;
@@ -11,6 +12,8 @@ export const AppHeader = styled.header`
   background-repeat: no-repeat;
   background-position: 20px center;
   color: #7c9bd3;
+  //-webkit-background-clip: text;
+  //-moz-background-clip: text;
 
   h1 {
     font-size: 36px;
@@ -21,4 +24,9 @@ export const AppHeader = styled.header`
 
 export const AppMain = styled.main`
   padding: 20px;
+`;
+
+
+export const RootLink = styled(Link)`
+  text-decoration: none;
 `;

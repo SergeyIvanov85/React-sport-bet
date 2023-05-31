@@ -1,6 +1,14 @@
-import styled from "styled-components";
+import { Link } from 'react-router-dom';
+
+import styled from 'styled-components';
 
 export const EventWrapper = styled.li`
+  width: 100%;
+  min-height: 70px;
+  list-style: none;
+` ;
+  
+  export const EventLink = styled(Link) `
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -16,7 +24,8 @@ export const EventWrapper = styled.li`
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #1B1B1B;
+  color: #1b1b1b;
+  text-decoration: none;
 `;
 
 export const EventHeader = styled.div`

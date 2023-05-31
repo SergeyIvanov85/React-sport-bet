@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const EventsWrapper = styled.ul`
   width: 100%;
