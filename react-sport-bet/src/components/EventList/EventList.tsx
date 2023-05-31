@@ -1,13 +1,13 @@
 import { FC } from 'react';
 
-import Event from '@/components/Event/Event';
+import EventItem from '@/components/EventItem/EventItem';
 import { EventListProps } from './EventList.props';
 
 const EventList: FC<EventListProps> = ({ events }) => (
     <ul>
-        {events.map(event =>
-            <Event event={event} />
-        )}
+        {events.map((event) => (
+            <EventItem key={event.id} event={event} />
+        ))}
     </ul>
 );
 
