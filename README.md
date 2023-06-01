@@ -7,5 +7,5 @@
 Запуск приложения:
 - склонируйте репозиторий
 - в ветке develop введите команды:
-  1. run npm install 
-  2. run npm run dev 
+  1. npm run install 
+  2. npm run dev 
