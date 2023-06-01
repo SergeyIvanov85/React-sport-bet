@@ -4,6 +4,7 @@ import backArrow from '@/assets/icons/back.svg';
 
 export const BackButton = styled.button`
   height: 40px;
+  cursor: pointer;
   margin: 0;
   padding: 0;
   padding-left: 40px;
