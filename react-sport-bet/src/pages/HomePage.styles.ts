@@ -11,4 +11,8 @@ export const MainWrapper = styled.div`
     padding: 20px 0;
     row-gap: 60px;
   }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    column-gap: 120px;
+  }
 `;

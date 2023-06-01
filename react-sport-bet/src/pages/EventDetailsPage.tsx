@@ -16,12 +16,14 @@ const EventDetailsPage = () => {
     }, []);
 
     return (
-        <MainWrapper>
+        <>
             <BackButton onClick={() => navigate('/events')}>
                 <span>Вернуться к событиям</span>
             </BackButton>
-            <EventDetails />
-        </MainWrapper>
+            <MainWrapper>
+                <EventDetails />
+            </MainWrapper>
+        </>
     );
 };
 

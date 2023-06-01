@@ -15,6 +15,10 @@ export const StyledEvent = styled.div`
       font-size: 28px;
       margin-bottom: 40px;
     }
+    @media screen and (min-width: 1200px) {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
   }
 `;
 
@@ -34,6 +38,10 @@ export const EventDetailsWrapper = styled.div`
     padding: 20px;
     max-width: 500px;
   }
+  @media screen and (min-width: 1200px) {
+    padding: 40px;
+    max-width: 700px;
+  }
 `;
 
 export const EventDetailsHeader = styled.div`
@@ -48,6 +56,12 @@ export const EventDetailsHeader = styled.div`
   @media screen and (min-width: 768px) {
     font-size: 18px;
     line-height: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 22px;
+    line-height: 28px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 `;
 
@@ -65,6 +79,10 @@ export const EventDetailsContent = styled.div`
     font-size: 18px;
     line-height: 24px;
   }
+  @media screen and (min-width: 1200px) {
+    font-size: 22px;
+    line-height: 28px;
+  }
 `;
 
 export const TeamInfo = styled.div`
@@ -72,12 +90,22 @@ export const TeamInfo = styled.div`
   flex-direction: column;
   row-gap: 10px;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    row-gap: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    row-gap: 30px;
+  }
   img {
     width: 70px;
     height: 70px;
     @media screen and (min-width: 768px) {
       width: 120px;
       height: 120px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 180px;
+      height: 180px;
     }
   }
 `;
@@ -92,6 +120,10 @@ export const Versus = styled.div`
   color: #3c3333;
   width: 100px;
   left: calc(50% - 50px);
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    line-height: 44px;
+  }
 `;
 
 

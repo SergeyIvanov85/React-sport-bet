@@ -18,5 +18,8 @@ export const StyledEvents = styled.div`
       margin-left: 24px;
       text-align: left;
     }
+    @media screen and (min-width: 840px) {
+      text-align: center;
+    }
   }
 `;
