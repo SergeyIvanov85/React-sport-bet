@@ -8,13 +8,9 @@ export const AppHeader = styled.header`
   align-items: center;
   padding: 15px 20px;
   background-color: #2036c4;
-  background-image: url(${logo});
-  background-repeat: no-repeat;
-  background-position: 20px center;
   color: #7c9bd3;
   //-webkit-background-clip: text;
   //-moz-background-clip: text;
-
   h1 {
     font-size: 36px;
     line-height: 40px;
@@ -23,9 +19,17 @@ export const AppHeader = styled.header`
 `;
 
 export const AppMain = styled.main`
+  position: absolute;
+  left: 20px;
   padding: 20px;
 `;
 
+export const LogoImage = styled.div`
+  width: 50px;
+  height: 50px;
+  background-image: url(${logo});
+  background-repeat: no-repeat;
+`;
 
 export const RootLink = styled(Link)`
   text-decoration: none;

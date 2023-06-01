@@ -6,5 +6,8 @@ export const StyledEvents = styled.div`
   width: 100%;
   h2 {
     margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
   }
 `;

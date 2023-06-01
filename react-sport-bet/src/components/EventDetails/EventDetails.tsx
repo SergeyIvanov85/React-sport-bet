@@ -6,7 +6,7 @@ const EventDetails = () => {
 
     return (
         <>
-            <button onClick={() => navigate(-1)}>Back</button>
+            <button onClick={() => navigate(-1)}>Назад</button>
             <h2>Event {id}</h2>
         </>
     );
