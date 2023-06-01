@@ -17,8 +17,11 @@ import {
 } from './EventDetails.styles';
 import { formatDate } from '@/utils/DateFormatter';
 import { formatTime } from '@/utils/TimeFormatter';
+import { useAppDispatch } from '@/app/hooks';
+import { addBet } from '@/app/betSlice';
 
 const EventDetails = () => {
+    const dispatch = useAppDispatch();
     const [betValue, setBetValue] = useState('');
     const [betOption, setBetOption] = useState<null | 'home' | 'draw' | 'away'>(
         null
@@ -28,6 +31,13 @@ const EventDetails = () => {
     const event = events.find((event) => event.id.toString() === id);
 
     const makeABet = () => {
+        dispatch(
+            addBet({
+                event,
+                option: betOption,
+                value: betValue
+            })
+        );
         navigate('/events');
     };
 

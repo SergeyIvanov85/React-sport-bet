@@ -5,7 +5,7 @@ export interface SportEvent {
     homeTeam: Team | undefined;
     awayTeam: Team | undefined;
     type: 'live' | 'upcoming';
-    date: Date;
+    date: string;
     rates: {
         homeWin: number;
         draw: number;
@@ -24,7 +24,7 @@ export const events: SportEvent[] = [
         homeTeam: teams.get('Bologna'),
         awayTeam: teams.get('AC Milan'),
         type: 'live',
-        date: new Date(2023, 6, 15, 16, 0),
+        date: '2023-06-15T16:00',
         rates: {
             homeWin: 1.5,
             draw: 1.2,
@@ -41,7 +41,7 @@ export const events: SportEvent[] = [
         homeTeam: teams.get('Napoli'),
         awayTeam: teams.get('Hellas Verona'),
         type: 'live',
-        date: new Date(2023, 6, 15, 19, 0),
+        date: '2023-06-15T19:00',
         rates: {
             homeWin: 1.5,
             draw: 1.2,
@@ -58,7 +58,7 @@ export const events: SportEvent[] = [
         homeTeam: teams.get('Internazionale'),
         awayTeam: teams.get('Monza'),
         type: 'live',
-        date: new Date(2023, 6, 15, 21, 45),
+        date: '2023-06-15T21:45',
         rates: {
             homeWin: 1.5,
             draw: 1.2,
@@ -75,7 +75,7 @@ export const events: SportEvent[] = [
         homeTeam: teams.get('Lecce'),
         awayTeam: teams.get('Sampdoria'),
         type: 'upcoming',
-        date: new Date(2023, 6, 16, 13, 30),
+        date: '2023-06-16T13:30',
         rates: {
             homeWin: 1.5,
             draw: 1.2,
@@ -92,7 +92,7 @@ export const events: SportEvent[] = [
         homeTeam: teams.get('Torino'),
         awayTeam: teams.get('Salernitana'),
         type: 'upcoming',
-        date: new Date(2023, 6, 16, 16, 0),
+        date: '2023-06-16T16:00',
         rates: {
             homeWin: 1.5,
             draw: 1.2,
@@ -109,7 +109,7 @@ export const events: SportEvent[] = [
         homeTeam: teams.get('Sassuolo'),
         awayTeam: teams.get('Juventus'),
         type: 'upcoming',
-        date: new Date(2023, 6, 16, 19, 0),
+        date: '2023-06-16T19:00',
         rates: {
             homeWin: 1.5,
             draw: 1.2,
@@ -126,7 +126,7 @@ export const events: SportEvent[] = [
         homeTeam: teams.get('AS Roma'),
         awayTeam: teams.get('Udinese'),
         type: 'upcoming',
-        date: new Date(2023, 6, 16, 21, 45),
+        date: '2023-06-16T21:45',
         rates: {
             homeWin: 1.5,
             draw: 1.2,
@@ -143,7 +143,7 @@ export const events: SportEvent[] = [
         homeTeam: teams.get('Fiorentina'),
         awayTeam: teams.get('Atalanta'),
         type: 'upcoming',
-        date: new Date(2023, 6, 17, 21, 45),
+        date: '2023-06-17T21:45',
         rates: {
             homeWin: 1.5,
             draw: 1.2,
