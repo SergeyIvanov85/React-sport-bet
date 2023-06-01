@@ -18,5 +18,9 @@ export const BackButton = styled.button`
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 `;

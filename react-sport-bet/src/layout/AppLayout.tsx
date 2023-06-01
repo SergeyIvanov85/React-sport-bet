@@ -1,17 +1,27 @@
 import { Outlet } from 'react-router-dom';
 
-import { AppHeader, AppMain, LogoImage, RootLink } from './AppLayout.styles';
+import {
+    AppHeader,
+    AppMain,
+    DefaultWrapper,
+    LogoImage,
+    RootLink
+} from './AppLayout.styles';
 
 const AppLayout = () => (
     <>
         <AppHeader>
-            <RootLink to='/'>
-                <LogoImage />
-            </RootLink>
-            <h1>СПОРТ БЕТ</h1>
+            <DefaultWrapper>
+                <RootLink to='/'>
+                    <LogoImage />
+                </RootLink>
+                <h1>СПОРТ БЕТ</h1>
+            </DefaultWrapper>
         </AppHeader>
         <AppMain>
-            <Outlet />
+            <DefaultWrapper>
+                <Outlet />
+            </DefaultWrapper>
         </AppMain>
     </>
 );

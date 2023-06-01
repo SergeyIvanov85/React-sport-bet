@@ -2,22 +2,21 @@ import { FC } from 'react';
 import { BetMessageProps } from './BetMessage.props';
 import { useAppDispatch } from '@/app/hooks';
 import { clearCurrent } from '@/app/betSlice';
+import { CloseButton, MessageText, MessageWrapper } from './BetMessage.styles';
 
 const BetMessage: FC<BetMessageProps> = ({ bet }) => {
     const { event } = bet;
     const dispatch = useAppDispatch();
-    const result = bet.option === 'draw' ? 'draw' : `${bet.option} team win`;
+    const result = bet.option === 'ничья' ? 'ничья' : `${bet.option}`;
     return (
-        <div>
-            <p>
+        <MessageWrapper>
+            <MessageText>
                 Спасибо за Вашу ставку на матч {event?.homeTeam?.name} против{' '}
-                {event?.awayTeam?.name}, результат - {result}, СУММА СТАВКИ = {bet.value}{' '}
+                {event?.awayTeam?.name}, ваша ставка на - {result}, СУММА СТАВКИ = {bet.value}{' '}
                 BYN успешно принята.
-            </p>
-            <button type='button' onClick={() => dispatch(clearCurrent())}>
-                x
-            </button>
-        </div>
+            </MessageText>
+            <CloseButton type='button' onClick={() => dispatch(clearCurrent())} />
+        </MessageWrapper>
     );
 };
 

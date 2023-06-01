@@ -12,11 +12,11 @@ const HomePage = () => {
         <MainWrapper>
             {bet && <BetMessage bet={bet} />}
             <EventBlock
-                heading='Live Events'
+                heading='Текущие события'
                 events={events.filter((event) => event.type === 'live')}
             />
             <EventBlock
-                heading='Upcoming Events'
+                heading='Предстоящие события'
                 events={events.filter((event) => event.type === 'upcoming')}
             />
         </MainWrapper>

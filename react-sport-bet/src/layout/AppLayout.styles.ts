@@ -6,11 +6,14 @@ export const AppHeader = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 20px;
   background-color: #efffaf;
   color: #7c9bd3;
   //-webkit-background-clip: text;
   //-moz-background-clip: text;
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    line-height: 48px;
+  }
   h1 {
     font-size: 36px;
     line-height: 40px;
@@ -18,19 +21,31 @@ export const AppHeader = styled.header`
   }
 `;
 
-export const AppMain = styled.main`
-  position: absolute;
-  left: 20px;
-  padding: 20px;
+export const AppMain = styled.main``;
+
+export const DefaultWrapper = styled.div`
+  padding: 15px 20px;
+  @media screen and (min-width: 768px) {
+    padding: 20px 80px;
+  }
 `;
 
 export const LogoImage = styled.div`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-image: url(${logo});
+  background-size: 40px 40px;
   background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
+  }
 `;
 
 export const RootLink = styled(Link)`
   text-decoration: none;
+  @media screen and (min-width: 768px) {
+    left: 80px;
+  }
 `;
