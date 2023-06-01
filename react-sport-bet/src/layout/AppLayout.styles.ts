@@ -7,7 +7,7 @@ export const AppHeader = styled.header`
   justify-content: center;
   align-items: center;
   padding: 15px 20px;
-  background-color: #2036c4;
+  background-color: #efffaf;
   color: #7c9bd3;
   //-webkit-background-clip: text;
   //-moz-background-clip: text;
