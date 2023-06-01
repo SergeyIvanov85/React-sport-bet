@@ -9,7 +9,7 @@ interface BetState {
 
 export interface Bet {
     event: SportEvent | undefined;
-    option: 'хозяева' | 'гости' | 'ничья' | null;
+    option: 'победу хозяев' | 'победу гостей' | 'ничью' | null;
     value: string;
 }
 

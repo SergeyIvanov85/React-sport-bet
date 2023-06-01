@@ -5,7 +5,8 @@ import cross from '@/assets/icons/cross.svg';
 export const MessageWrapper = styled.div`
   display: flex;
   position: relative;
-  background-color: rgba(60, 51, 51, 0.2);
+  background: rgb(109,105,170);
+  background: linear-gradient(90deg, rgba(109,105,170,1) 0%, rgba(71,71,144,1) 46%, rgba(0,255,248,1) 100%);
   border-radius: 20px;
 `;
 
@@ -14,7 +15,7 @@ export const MessageText = styled.p`
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
-  color: #3C3333;
+  color: black;
   margin: 0;
   padding: 15px 40px 15px 20px;
   @media screen and (min-width: 768px) {

@@ -24,7 +24,8 @@ export const EventDetailsWrapper = styled.div`
   row-gap: 25px;
   width: 100%;
   max-width: 280px;
-  background-color: #efffaf;
+  background: rgb(169,215,249);
+  background: linear-gradient(90deg, rgba(169,215,249,1) 15%, rgba(147,197,210,1) 80%, rgba(169,235,240,1) 100%);
   padding: 20px 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
@@ -118,7 +119,8 @@ export const RadioBets = styled.div`
   input {
     display: none;
     &:checked + label {
-      background-color: #efffaf;
+      background: rgb(169,215,249);
+      background: linear-gradient(90deg, rgba(169,215,249,1) 15%, rgba(147,197,210,1) 80%, rgba(169,235,240,1) 100%);
     }
   }
   label {
@@ -174,7 +176,8 @@ export const BetPoints = styled.span`
   text-align: center;
   padding: 9px 5px;
   color: #3c3333;
-  background: #efffaf;
+  background: rgb(169,215,249);
+  background: linear-gradient(90deg, rgba(169,215,249,1) 15%, rgba(147,197,210,1) 80%, rgba(169,235,240,1) 100%);
   border-width: 1px 1px 1px 0px;
   border-style: solid;
   border-color: rgba(60, 51, 51, 0.5);
@@ -191,7 +194,8 @@ export const BetButton = styled.button`
   font-size: 20px;
   line-height: 30px;
   color: #efffaf;
-  background-color: rgba(60, 51, 51, 1);
+  background: rgb(109,105,170);
+  background: linear-gradient(90deg, rgba(109,105,170,1) 0%, rgba(71,71,144,1) 46%, rgba(0,255,248,1) 100%);
   text-align: center;
   text-transform: uppercase;
   padding: 10px 15px;

@@ -23,7 +23,7 @@ import { addBet } from '@/app/betSlice';
 const EventDetails = () => {
     const dispatch = useAppDispatch();
     const [betValue, setBetValue] = useState('');
-    const [betOption, setBetOption] = useState<null | 'хозяев' | 'ничью' | 'гостей'>(
+    const [betOption, setBetOption] = useState<null | 'победу хозяев' | 'ничью' | 'победу гостей'>(
         null
     );
     const navigate = useNavigate();
@@ -84,7 +84,7 @@ const EventDetails = () => {
                             id='home'
                             name='betOption'
                             value='хозяева'
-                            onClick={() => setBetOption('хозяев')}
+                            onClick={() => setBetOption('победу хозяев')}
                         />
                         <label htmlFor='home'>Хозяева {event.rates.homeWin.toFixed(2)}</label>
                         <input
@@ -100,7 +100,7 @@ const EventDetails = () => {
                             id='away'
                             name='betOption'
                             value='гости'
-                            onClick={() => setBetOption('гостей')}
+                            onClick={() => setBetOption('победу гостей')}
                         />
                         <label htmlFor='away'>Гости {event.rates.awayWin.toFixed(2)}</label>
                     </RadioBets>

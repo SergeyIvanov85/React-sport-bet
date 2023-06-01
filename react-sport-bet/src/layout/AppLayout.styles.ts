@@ -6,7 +6,8 @@ export const AppHeader = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #efffaf;
+  background: rgb(109,105,170);
+  background: linear-gradient(90deg, rgba(109,105,170,1) 0%, rgba(71,71,144,1) 46%, rgba(0,255,248,1) 100%);
   color: #7c9bd3;
   //-webkit-background-clip: text;
   //-moz-background-clip: text;
